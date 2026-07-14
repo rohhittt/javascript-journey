@@ -6,8 +6,14 @@ const quotes = [
     "Dream big, start small."
 ];
 const quote = document.getElementById("QuoteText")
+const NewQuote = document.getElementById("NewQuote")
 
 const showRandomQuote = () =>{
     const randomIndex = Math.floor(Math.random() * quotes.length);
-    quote.textContent = quotes[randomIndex];
-}
+quote.innerHTML = `<b>Quote:</b> ${quotes[randomIndex]}`;}
+
+NewQuote.addEventListener("click", () =>{
+   showRandomQuote()
+});
+
+showRandomQuote();
