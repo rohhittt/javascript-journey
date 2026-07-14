@@ -3,14 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript 7/Movie Manager</title>
-
+    <title>Movie Manager</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    -------------------------------------------------
-    <h1>Movie Manager</h1>
-    <h3>Movies:</h3>
-    -------------------------------------------------
+
+    <h1>🎬 Movie Manager</h1>
+
+    <input
+        type="text"
+        id="movieInput"
+        placeholder="Enter movie name..."
+    >
+
+    <button id="AddMovie">Add Movie</button>
+    <button id="RemoveMovie">Remove Last</button>
+    <button id="RemoveFirst">Remove First</button>
+
+    <hr>
+
+    <h2>Movies</h2>
+
+    <div id="movielist"></div>
+
+    <p id="moviescount"></p>
+
+    <script src="script.js"></script>
+
 </body>
 </html>

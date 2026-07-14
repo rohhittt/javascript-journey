@@ -12,16 +12,16 @@
       const profile = document.getElementById("profile");
       const button = document.getElementById("btn");
 
-      const isHidden = false;
+      let isHidden = false;
       button.addEventListener("click",function(){
             console.log("Button clicked");
-            if (ishidden === false) {
+            if (isHidden === false) {
                   profile.style.display = "none";
                   document.getElementById("status").textContent = "Profile Hidden";
-                  ishidden = true;
+                  isHidden = true;
             } else {
                   profile.style.display = "block";
                   document.getElementById("status").textContent = "Profile Visible";
-                  ishidden = false;
+                  isHidden = false;
             }
       })
